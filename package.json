@@ -7,7 +7,7 @@
     "build:inject": "cross-env VITE_AUTO_INJECT=true vite build",
     "dev:min": "cross-env VITE_AUTO_INJECT=false vite",
     "build:min": "cross-env VITE_AUTO_INJECT=false vite build",
-    "zip": "node scripts/zip.ts",
+    "zip": "tsx scripts/zip.ts",
     "lint": "eslint src --ext .ts",
     "format": "prettier -w ."
   },
@@ -16,6 +16,8 @@
     "@types/chrome": "^0.1.4",
     "@types/node": "^24.3.0",
     "cross-env": "^10.0.0",
+    "cross-zip": "^4.0.1",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2",
     "vite": "^7.1.2"
   }
